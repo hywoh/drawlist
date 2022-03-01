@@ -1,2 +1,2 @@
 # gui
-A GUI built for Unreal Engine's Canvas.
+A simple GUI built for Unreal Engine's Canvas.
