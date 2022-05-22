@@ -10,7 +10,7 @@ drawList->AddText(L"Hello", { 500, 500 }, true, FLinearColor(1.0f, 1.0f, 1.0f, 1
 static bool draw_text = false;
 Canvas::StartWindow(L"Example Window", { 1000, 500 }); // Initialize the window with a title of 'Example Window'
 
-if (Canvas::Button(L"Click me!")) { draw_text != draw_text }; // Draw a button that if clicked, toggles draw_text.
+if (Canvas::Button(L"Click me!")) { draw_text = !draw_text; }; // Draw a button that if clicked, toggles draw_text.
 if (draw_text)
 {
     Canvas::Text("You clicked the button!", Canvas::Color::White, Canvas::GetFont(ENGINE_ROBOTO_SMALL)); // Draw text with small roboto font in white if button clicked
